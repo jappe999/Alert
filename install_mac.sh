@@ -1,3 +1,6 @@
+brew install gtk+3
+brew install pygobject3
+
 pip3 install pyobjc-core
 pip3 install pyobjc 
 pip3 install pyautogui 
