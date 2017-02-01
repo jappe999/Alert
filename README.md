@@ -4,7 +4,7 @@ Alert the user if he/she is using the computer too long.
 ## Installing
 Different platforms use different packages, so...
 ### Windows
-Just run 
+Just run:
 ```
 python3 setup.py install
 ```
@@ -27,5 +27,5 @@ sudo chmod +x install_linux.sh
 ```
 And then run it with:
 ```
-sudo ./install_mac.sh
+sudo ./install_linux.sh
 ```
