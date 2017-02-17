@@ -11,11 +11,6 @@ def main():
                 "time":5400,
                 "text":"Isn't it time to take a break?",
                 "subtext":"It's been 1.5 hours..."
-            },
-            {
-                "time":5,
-                "text":"Isn't it time to take a break?",
-                "subtext":"It's been 1.5 hours..."
             }
         ])
 

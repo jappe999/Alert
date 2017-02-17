@@ -56,18 +56,20 @@ class WatchDog(object):
         while True:
             if self.active(): # If mouse has moved
                 self.mouse_timeout = 0
-            elif self.mouse_timeout >= 4: # 15 minutes
+            elif self.mouse_timeout >= 900: # 15 minutes
                 self.reset_time()
+                print('Resetting...')
                 continue
 
             self.mouse_timeout += 1
 
             if len(self.dogs) > 0:
                 for dog in self.dogs:
-                    if time.time() >= self.get_time(dog['time']) and dog['is_alerted'] == False:
+                    if time.time() >= dog['time'] and dog['is_alerted'] == False:
                         t = Thread(target=self.alert, args=(dog['text'], dog['subtext'],))
                         t.start()
                         dog['is_alerted'] = True
             else:
+                print('Exiting...')
                 sys.exit(0)
             time.sleep(1)

@@ -8,17 +8,6 @@ Just run:
 ```
 python3 setup.py install
 ```
-### Mac OS X
-Make sure you've installed [brew](http://brew.sh/)
-
-Make install_mac.sh executable with:
-```
-sudo chmod +x install_mac.sh
-```
-And then run it with:
-```
-sudo ./install_mac.sh
-```
 
 ### Linux
 Make install_linux.sh executable with:
